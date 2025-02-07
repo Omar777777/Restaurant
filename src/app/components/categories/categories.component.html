@@ -1,0 +1,103 @@
+<div class="categories-options ps-3 pe-3">
+    <h1 class="mb-0">Learn, Cook, Eat Your Food</h1>
+
+    <div class="select-option-container" (change)="onCategoryChange($event)">
+
+            <select class="w-100" name="MealsCategories" id="">
+                <option value="All">All</option>
+                <option value="Beef">Beef</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Goat">Goat</option>
+                <option value="Lamb">Lamb</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Pork">Pork</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Side">Side</option>
+                <option value="Starter">Starter</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+            </select>
+
+    </div>
+
+
+    <div class="options-container">
+
+     
+
+        <ul>
+            <li>
+                <a routerLink=" " class="my-option" routerLinkActive="bg-black text-white">All</a>
+
+            </li>
+            <li>
+                <a routerLink="category/Beef" class="my-option" routerLinkActive="bg-black text-white">Beef</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Breakfast" class="my-option" routerLinkActive="bg-black text-white">Breakfast</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Chicken" class="my-option" routerLinkActive="bg-black text-white">Chicken</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Dessert" class="my-option" routerLinkActive="bg-black text-white">Dessert</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Goat" class="my-option" routerLinkActive="bg-black text-white">Goat</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Lamb" class="my-option" routerLinkActive="bg-black text-white">Lamb</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Miscellaneous" class="my-option" routerLinkActive="bg-black text-white">Miscellaneous</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Pasta" class="my-option" routerLinkActive="bg-black text-white">Pasta</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Pork" class="my-option" routerLinkActive="bg-black text-white">Pork</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Seafood" class="my-option" routerLinkActive="bg-black text-white">Seafood</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Side" class="my-option" routerLinkActive="bg-black text-white">Side</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Starter" class="my-option" routerLinkActive="bg-black text-white">Starter</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Vegan" class="my-option" routerLinkActive="bg-black text-white">Vegan</a>
+            
+            </li>
+            <li>
+                <a routerLink="category/Vegetarian" class="my-option" routerLinkActive="bg-black text-white">Vegetarian</a>
+            
+            </li>
+
+        </ul>  
+    </div>
+
+
+<router-outlet></router-outlet>
+
+
+
+    
+
+</div>

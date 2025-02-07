@@ -1,0 +1,36 @@
+.my-footer{
+    height: 185px;
+
+    .footer-logo{
+        width: 42px;
+        height: 32px;
+    }
+    .recipe-word{
+        font-family: cursive;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: black;
+        margin-left: 12px;
+
+    }
+
+    .route-word{
+        font-family: cursive;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: rgb(29, 78, 216);
+    }
+
+    .my-border{
+        border-top: 1px solid rgba(235, 229, 229, 0.836);
+    }
+    .copy-right{
+        font-family: cursive;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgb(107, 114, 128);
+    }
+}

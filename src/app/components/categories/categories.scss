@@ -1,0 +1,166 @@
+@use "../dashboard/dashboard-styles.scss" as dashboard-styles;
+$nonactive-option-color : rgb(75,85,99);
+
+.categories-options{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+h1{
+    font-family: Pacifico;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    background: linear-gradient(to right, dashboard-styles.$option-bg-color, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.options-container {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    max-width: 1504px;
+    border-bottom: 1px solid rgb(235, 225, 225);
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        list-style-type:none;
+        padding-left: 0px;
+
+        li{
+            margin-top: 10px;
+        }
+    }
+
+    .my-option {
+        padding: 8px 16px;
+        text-decoration: none;
+        color: $nonactive-option-color;
+        border: 1px solid dashboard-styles.$borders-color;
+        border-radius: 9999px;
+        font-family: cursive;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: none;
+        box-shadow: 0 8px 8px -1px none;
+        transition: all 0.2s;
+        position: relative; 
+
+        &:hover {
+            background-color: white;
+            transform: scale(1.05);
+            box-shadow: 0 8px 8px -1px white;
+            z-index: 1; 
+        }
+
+      
+    }
+}
+
+
+.meal-box{
+    margin-top: 70px;
+    max-width: 1380px;
+}
+
+.my-meal-container{
+    background-color: white;
+    padding: 0px 48px 16px 48px;
+    border-radius: 25px;
+    transition: all 0.5s;
+
+    &:hover{
+        transform: scale(1.003);
+        box-shadow: 0 8px 8px -1px rgb(179, 175, 175);
+
+        img{
+            transform: rotate(360deg);
+        }
+
+    }
+    
+
+   .moving-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-30px);
+
+    img{
+        box-shadow: 0 8px 8px -1px gray;
+        transition: all 0.5s;
+    }
+
+    h3 {
+            font-family: cursive;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 20px;
+    
+        }
+    
+        h5 {
+    
+            margin-bottom: 16px;
+    
+            svg {
+                color: rgb(5, 150, 105);
+                width: 16px;
+                height: 16px;
+    
+            }
+    
+            span {
+                font-family: cursive;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                margin-left: 10px;
+                color: rgb(5, 150, 105);
+            }
+        }
+    
+        a {
+            text-decoration: none;
+            font-family: cursive;
+            font-weight: 600;
+            line-height: 24px;
+            padding: 8px 32px;
+            background-color: rgb(5, 150, 105);
+            border-radius: 9999px;
+            color: white;
+        }
+
+   }
+}
+
+.select-option-container{
+    select{
+        margin-top: 50px;
+        padding: 10px;
+        height: 43px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .options-container{
+        display: none;
+    }
+    .select-option-container {
+        display: block;
+    }
+}
+
+@media (min-width: 640px) {
+    .options-container {
+        display: block;
+    }
+
+    .select-option-container {
+        display: none;
+    }
+
+}

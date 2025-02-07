@@ -1,0 +1,51 @@
+
+<!-- Modal -->
+<div class="modal left" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-left">
+    <div class="modal-content h-100">
+      <div class="modal-body p-0">
+        <div class="parent vh-100">
+          <app-dashboard></app-dashboard>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="dash-categoreis-container d-flex" style="min-height: 700px;">
+
+  <div class="threetabsmenu-container">
+    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+              d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+          </svg>
+    </button>
+
+  </div>
+  
+    <div class="mydashboard-container vh-100">
+      <app-dashboard></app-dashboard>
+    </div>
+
+    
+
+   
+
+
+  
+  
+  <div class="right-side p-3">
+
+    <app-categories></app-categories>
+
+  </div>
+
+</div>
+
+<app-footer></app-footer>
+     
+     
+

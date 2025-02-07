@@ -1,0 +1,56 @@
+.my-svg {
+  color: white;
+  margin-bottom: 7px;
+}
+
+.my-option-text {
+  margin-left: 12px;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+}
+
+.my-option-tag {
+  margin-bottom: 24px;
+  background-color: rgb(242, 151, 36);
+  padding: 8px 16px !important;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px -1px rgba(236, 167, 39, 0.87);
+  transition: all 0.2s;
+}
+.my-option-tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 8px -1px white;
+}
+
+.my-option-tag2 {
+  border: 1px solid rgb(209, 213, 219);
+  margin-bottom: 24px;
+  background-color: none;
+  padding: 8px 16px !important;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px -1px none;
+  transition: all 0.2s;
+}
+.my-option-tag2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 8px -1px white;
+}
+
+.my-svg2 {
+  color: black;
+  margin-bottom: 7px;
+}
+
+.my-option2-text {
+  margin-left: 12px;
+  font-family: cursive;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+/*# sourceMappingURL=dashboard.component.css.map */

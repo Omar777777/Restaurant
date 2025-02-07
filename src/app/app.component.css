@@ -1,0 +1,87 @@
+.mydashboard-container {
+  box-sizing: border-box;
+  padding: 16px 12px;
+  background-color: rgb(249, 250, 251);
+  min-width: 232px;
+  max-width: 232px;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.parent {
+  padding: 16px 12px;
+  width: 232px;
+  background-color: rgb(249, 250, 251);
+  z-index: 10000000000000000000;
+}
+
+.modal.left .modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: auto;
+  height: 100%;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.3s ease-out !important;
+}
+
+.modal.left.show .modal-dialog {
+  transform: translate3d(0, 0, 0);
+}
+
+.modal {
+  transition: none !important;
+}
+
+.modal-dialog {
+  transition: none !important;
+}
+
+.threetabsmenu-container {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mydashboard-container {
+    display: none;
+    translate: -232px 0px;
+    transition-property: display opacity;
+    transition-duration: 0.1s;
+    transition-behavior: allow-discrete;
+  }
+  .threetabsmenu-container {
+    display: block;
+  }
+  .threetabsmenu-container button {
+    border: 0px;
+    padding: 8px;
+    margin: 8px 0px 0px 12px;
+  }
+  .threetabsmenu-container button svg {
+    color: rgb(102, 98, 98);
+    width: 24px;
+    height: 24px;
+  }
+  .dash-categoreis-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+@media (min-width: 640px) {
+  .mydashboard-container {
+    display: block;
+    translate: 0px 0px;
+    transition-property: display opacity;
+    transition-duration: 1s;
+    transition-behavior: allow-discrete;
+  }
+  @starting-style {
+    .mydashboard-container {
+      opacity: 0;
+      translate: -232px;
+    }
+  }
+}
+
+/*# sourceMappingURL=app.component.css.map */

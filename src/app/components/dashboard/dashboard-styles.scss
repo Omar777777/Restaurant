@@ -1,0 +1,69 @@
+$option-bg-color: rgb(242, 151, 36);
+$boxshadow-color: rgba(236, 167, 39, 0.87);
+$borders-color: rgb(209 213 219);
+
+
+@mixin svg-style($svg-color, $svg-margin){
+    color: $svg-color;
+    margin-bottom: $svg-margin;
+}
+.my-svg{
+    @include svg-style(white, 7px);
+}
+
+
+@mixin my-options-text($weight,$size,$line-heights){
+    margin-left: 12px;
+    font-family: cursive;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-heights;
+}
+
+.my-option-text{
+    @include my-options-text(600, 18px, 28px);
+    color: white;
+}
+
+@mixin my-options-tag($options-bg-color, $boxshadows-color){
+
+    margin-bottom: 24px;
+    background-color: $options-bg-color;
+    padding: 8px 16px !important;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px -1px $boxshadows-color;
+    transition: all 0.2s;
+
+    &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 8px -1px white;
+        }
+
+}
+.my-option-tag{
+    @include my-options-tag($option-bg-color, $boxshadow-color);
+}
+
+
+
+.my-option-tag2{
+    border: 1px solid $borders-color;
+    @include my-options-tag(none, none);
+
+}
+
+.my-svg2{
+    @include svg-style(black, 7px);
+
+}
+
+.my-option2-text{
+    @include my-options-text(400, 16px, 24px);
+    color: black;
+}
+
+
+
+
+
+
